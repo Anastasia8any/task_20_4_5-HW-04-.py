@@ -6052,7 +6052,7 @@ the_best_user = max(orders_per_user.items(), key=lambda x: x[1])[0]
 the_best_bayer = max(total_spending_per_user.items(), key=lambda x: x[1])[0]
 
 average_orden_price = total_orders_price/len(orders)
-average_item_price = total_items/total_items
+average_item_price = total_orders_price/total_items
 
 print(f'1. Номер заказа с самой большой стоимостью: {max_order}, стоимость заказа: {max_price}')
 print(f'2. Заказ с наибольшим количеством товаров: №{max_quantity_order}, количество: {max_quantity}')
